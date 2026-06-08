@@ -129,7 +129,7 @@ export const proposal = {
       expandedButtonMobile: "Completa",
     },
 
-    summary: {
+  summary: {
   title: "Resumo da proposta",
 
   text:
@@ -181,21 +181,21 @@ timeline: {
 },
 
 exclusions: {
-      id: "delimitacoes",
+  id: "delimitacoes",
 
-      eyebrow: "Delimitações",
+  eyebrow: "Delimitações",
 
-      title: "Itens não inclusos",
+  title: "Itens não inclusos",
 
-      items: [
-        "Produção gráfica das embalagens",
-        "Impressão, prototipagem física ou compra de embalagens",
-        "Fotografia profissional dos produtos",
-        "Redesign das marcas Casa Delmar ou Nagashimori",
-        "Criação de logotipo, naming ou identidade visual completa",
-        "Ajustes técnicos exigidos por fornecedores após alteração de faca, formato ou processo produtivo não previsto",
-      ],
-    },
+  items: [
+    "Produção gráfica das embalagens",
+    "Impressão, prototipagem física ou compra de embalagens",
+    "Fotografia profissional dos produtos",
+    "Redesign das marcas Casa Delmar ou Nagashimori",
+    "Criação de logotipo, naming ou identidade visual completa",
+    "Ajustes técnicos exigidos por fornecedores após alteração de faca, formato ou processo produtivo não previsto",
+  ],
+},
 
     closing: {
       id: "fechamento",
