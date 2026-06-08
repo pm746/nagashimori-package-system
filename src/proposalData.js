@@ -1,5 +1,5 @@
 export const proposal = {
-  projectName: "Nagashimori | Casa Delmar",
+  projectName: "Nagashimori | Casa Del Mar",
 
   title: "Package System de Transição",
 
@@ -180,9 +180,6 @@ timeline: {
     },
   ],
 },
-```
-
-
     exclusions: {
       id: "delimitacoes",
 
