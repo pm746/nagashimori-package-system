@@ -1,4 +1,3 @@
-```js
 export const proposal = {
   projectName: "Nagashimori | Casa Delmar",
 
