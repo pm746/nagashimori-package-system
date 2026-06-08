@@ -130,23 +130,22 @@ export const proposal = {
     },
 
     summary: {
-      title: "Resumo da proposta",
+  title: "Resumo da proposta",
 
-      text:
-        "O resumo abaixo consolida os itens selecionados e a condição Sebrae aplicada ao investimento.",
+  text:
+    "O resumo abaixo consolida os itens selecionados e a condição Sebrae aplicada ao investimento.",
 
-      totalLabel: "Total selecionado",
+  totalLabel: "Total selecionado",
 
-      sendButton: "Enviar resumo",
-      sendingButton: "Enviando...",
-      successMessage: "Resumo enviado com sucesso.",
-      errorMessage: "Não foi possível enviar agora.",
+  sendButton: "Enviar resumo",
+  sendingButton: "Enviando...",
+  successMessage: "Resumo enviado com sucesso.",
+  errorMessage: "Não foi possível enviar agora.",
 
-      downloadPdfButton: "Baixar PDF",
-      sharePdfButton: "Compartilhar PDF",
-    },
+  downloadPdfButton: "Baixar PDF",
+  sharePdfButton: "Compartilhar PDF",
+},
 
-    ```js
 timeline: {
   id: "cronograma",
 
@@ -180,8 +179,9 @@ timeline: {
     },
   ],
 },
-    exclusions: {
-      id: "delimitacoes",
+
+exclusions: {
+    id: "delimitacoes",
 
       eyebrow: "Delimitações",
 
