@@ -1,14 +1,15 @@
+```js
 export const proposal = {
-  projectName: "Nome do Cliente",
+  projectName: "Nagashimori | Casa Delmar",
 
-  title: "Estratégia e Design para a nova fase da marca.",
+  title: "Package System de Transição",
 
   subtitle:
-    "Uma proposta modular e configurável para estruturar direção, comunicação e presença da marca.",
+    "Sistema de embalagens desenvolvido para acompanhar a evolução entre Casa Delmar e Nagashimori, utilizando a muralha artística existente como elemento visual proprietário.",
 
-  proposalType: "Proposta Comercial · Design Estratégico",
+  proposalType: "Proposta Comercial · Design de Embalagem",
 
-  formName: "proposta-simplexa",
+  formName: "proposta-nagashimori-package-system",
 
   assets: {
     headerDesktop: "/assets/header-desktop.png",
@@ -19,7 +20,7 @@ export const proposal = {
 
   nav: [
     ["contexto", "Contexto"],
-    ["diagnostico", "Diagnóstico"],
+    ["diagnostico", "Leitura"],
     ["escopo", "Escopo"],
     ["investimento", "Investimento"],
     ["cronograma", "Cronograma"],
@@ -27,21 +28,33 @@ export const proposal = {
   ],
 
   introCard: {
-    label: "Escopo configurável",
-    title: "Proposta modular",
+    label: "Escopo modular",
+    title: "Sistema principal + adicional",
     text:
-      "Cada bloco pode assumir apenas as profundidades que realmente fazem sentido para o projeto.",
+      "A proposta contempla um package system principal para as embalagens centrais do negócio, com possibilidade de expansão para itens complementares.",
   },
 
   payment: {
-    cashDiscount: 0.05,
-    entryPercent: 0.4,
-    installmentsCount: 3,
+    cashDiscount: 0,
+    entryPercent: 0,
+    installmentsCount: 12,
+
+    options: [
+      {
+        id: "sebrae-12x",
+        label: "Programa Sebrae",
+        description:
+          "Valor com 40% de subsídio Sebrae, com saldo parcelado em até 12x.",
+        discount: 0.4,
+        entryPercent: 0,
+        installmentsCount: 12,
+      },
+    ],
 
     milestones: [
-      "40% na aprovação",
-      "30% na entrega parcial",
-      "30% na entrega final",
+      "Projeto realizado via programa Sebrae",
+      "40% de subsídio sobre o valor integral",
+      "Saldo final parcelado em até 12x",
     ],
   },
 
@@ -50,11 +63,11 @@ export const proposal = {
       id: "contexto",
       eyebrow: "Contexto",
 
-      title: "Momento da marca",
+      title: "Uma embalagem para um momento de transição",
 
       paragraphs: [
-        "A marca está em um momento de reorganização e evolução.",
-        "O desafio não é apenas atualizar materiais, mas estruturar direção e clareza para os próximos movimentos.",
+        "Casa Delmar e Nagashimori vivem um momento de evolução física, simbólica e comercial. Antes de uma transição completa de marca, existe a necessidade de criar um sistema de embalagem capaz de acompanhar esse período sem depender diretamente das identidades atuais.",
+        "A proposta parte da muralha artística existente no espaço físico da Casa Delmar como elemento reconhecível e afetivo, transformando essa referência em uma linguagem gráfica própria para as embalagens.",
       ],
     },
 
@@ -66,24 +79,24 @@ export const proposal = {
       title: "Síntese da necessidade",
 
       text:
-        "Criar uma base mais organizada para orientar posicionamento, comunicação e expansão.",
+        "Criar um sistema visual de embalagens que funcione como ponte entre o momento atual e a próxima fase do negócio.",
 
       cards: [
         {
-          title: "Direção",
+          title: "Transição",
           text:
-            "Definir critérios para comunicação, marca e tomada de decisão.",
+            "Usar um elemento físico já existente como base para a evolução visual do negócio.",
         },
 
         {
           title: "Sistema",
           text:
-            "Organizar o projeto em blocos claros e configuráveis.",
+            "Fazer as embalagens conversarem entre si, funcionando individualmente e como conjunto.",
         },
       ],
 
       note:
-        "A proposta foi estruturada para permitir ajustes de profundidade conforme a necessidade real do projeto.",
+        "O projeto não é um redesign de marca. A estratégia aparece de forma pontual, apenas como direcionamento conceitual para orientar o uso da muralha como elemento simbólico e visual da transição.",
     },
 
     scope: {
@@ -94,7 +107,7 @@ export const proposal = {
       title: "Estrutura da proposta",
 
       text:
-        "Os blocos abaixo podem ser incluídos ou ampliados conforme a necessidade do projeto.",
+        "O projeto está dividido entre o package system principal e um módulo adicional de expansão para novas categorias de embalagem.",
     },
 
     investment: {
@@ -105,38 +118,32 @@ export const proposal = {
       title: "Configuração de escopo",
 
       text:
-        "Alguns blocos possuem apenas Incluir / Não incluir. Outros possuem versões Padrão e Expandido.",
+        "O escopo principal contempla as embalagens centrais do sistema. O módulo adicional pode ser incluído conforme a necessidade do projeto.",
 
       summaryButtonClosed: "Abrir resumo",
       summaryButtonOpen: "Fechar resumo",
 
       standardButtonDesktop: "Configuração base",
-      expandedButtonDesktop: "Configuração expandida",
+      expandedButtonDesktop: "Configuração completa",
 
       standardButtonMobile: "Base",
-      expandedButtonMobile: "Expandido",
+      expandedButtonMobile: "Completa",
     },
 
     summary: {
       title: "Resumo da proposta",
 
       text:
-        "O resumo abaixo consolida os blocos escolhidos e as condições da proposta.",
+        "O resumo abaixo consolida os itens selecionados e a condição Sebrae aplicada ao investimento.",
 
       totalLabel: "Total selecionado",
 
       sendButton: "Enviar resumo",
-
       sendingButton: "Enviando...",
-
-      successMessage:
-        "Resumo enviado com sucesso.",
-
-      errorMessage:
-        "Não foi possível enviar agora.",
+      successMessage: "Resumo enviado com sucesso.",
+      errorMessage: "Não foi possível enviar agora.",
 
       downloadPdfButton: "Baixar PDF",
-
       sharePdfButton: "Compartilhar PDF",
     },
 
@@ -149,18 +156,27 @@ export const proposal = {
 
       items: [
         {
-          period: "Semana 01",
-          text: "Imersão e alinhamento inicial.",
+          period: "Etapa 01",
+          text:
+            "Alinhamento inicial, recebimento das referências, medidas, modelos de embalagem e imagem/base da muralha artística.",
         },
 
         {
-          period: "Semana 02–03",
-          text: "Desenvolvimento estratégico.",
+          period: "Etapa 02",
+          text:
+            "Leitura conceitual da transição e definição da lógica visual do sistema.",
         },
 
         {
-          period: "Semana 04",
-          text: "Consolidação e apresentação.",
+          period: "Etapa 03",
+          text:
+            "Vetorização, reconstrução gráfica da arte, definição cromática e desenvolvimento das aplicações nas embalagens.",
+        },
+
+        {
+          period: "Etapa 04",
+          text:
+            "Ajustes finais, preparação dos arquivos para produção e entrega das especificações básicas para fornecedores.",
         },
       ],
     },
@@ -173,9 +189,12 @@ export const proposal = {
       title: "Itens não inclusos",
 
       items: [
-        "Produção gráfica",
-        "Registro de marca",
-        "Desenvolvimento técnico de site",
+        "Produção gráfica das embalagens",
+        "Impressão, prototipagem física ou compra de embalagens",
+        "Fotografia profissional dos produtos",
+        "Redesign das marcas Casa Delmar ou Nagashimori",
+        "Criação de logotipo, naming ou identidade visual completa",
+        "Ajustes técnicos exigidos por fornecedores após alteração de faca, formato ou processo produtivo não previsto",
       ],
     },
 
@@ -187,15 +206,16 @@ export const proposal = {
       title: "Início do projeto",
 
       text:
-        "Após a aprovação, a Simplexa agenda o alinhamento inicial e inicia o processo.",
+        "Após a aprovação, a Simplexa organiza os materiais necessários, valida os formatos de embalagem e inicia o desenvolvimento do sistema visual.",
 
       flowTitle: "Fluxo",
 
       flow: [
         "Aprovação da proposta",
-        "Pagamento da entrada",
-        "Briefing e kickoff",
-        "Início do projeto",
+        "Envio das referências e modelos das embalagens",
+        "Alinhamento inicial",
+        "Desenvolvimento e apresentação do package system",
+        "Ajustes finais e entrega dos arquivos",
       ],
     },
   },
@@ -204,26 +224,38 @@ export const proposal = {
     {
       id: "01",
 
-      key: "diagnostico",
+      key: "package-system-principal",
 
-      title: "Diagnóstico de Marca",
+      title: "Package System Principal",
 
       note:
-        "Leitura estratégica do contexto, oportunidades e desafios.",
+        "Sistema visual de transição aplicado às embalagens centrais do negócio.",
 
       standard: {
-        label: "Incluir",
+        label: "Principal",
 
-        value: 10000,
+        value: 2300,
 
         description:
-          "Diagnóstico estruturado para orientar as decisões seguintes.",
+          "Desenvolvimento do sistema principal de embalagens, usando a muralha artística como base visual e simbólica.",
 
         includes: [
-          "Briefing",
-          "Leitura de materiais",
-          "Síntese diagnóstica",
-          "Direcionamento estratégico inicial",
+          "Direcionamento conceitual de transição entre Casa Delmar e Nagashimori",
+          "Definição da muralha artística como elemento simbólico e visual do sistema",
+          "Leitura e interpretação da arte existente",
+          "Vetorização e reconstrução gráfica da arte",
+          "Definição do padrão cromático do sistema",
+          "Desenvolvimento da lógica de composição visual",
+          "Definição de como cada embalagem recebe a ilustração",
+          "Relação visual entre as embalagens para funcionamento individual e integrado",
+          "Caixa sushi pequena",
+          "Caixa sushi média",
+          "Caixa sushi grande",
+          "Embalagem de temaki",
+          "Sacola craft branca",
+          "Arquivos finais para produção",
+          "Mockups de apresentação",
+          "Especificações básicas para fornecedores",
         ],
       },
     },
@@ -231,41 +263,29 @@ export const proposal = {
     {
       id: "02",
 
-      key: "estrategia",
+      key: "modulo-adicional",
 
-      title: "Estratégia de Marca",
+      title: "Módulo Adicional",
 
       note:
-        "Estrutura posicionamento, valor e direção da marca.",
+        "Expansão do sistema visual para embalagens complementares.",
 
       standard: {
-        label: "Padrão",
+        label: "Adicional",
 
-        value: 14000,
-
-        description:
-          "Estratégia aplicável para orientar comunicação e crescimento.",
-
-        includes: [
-          "Plataforma da Marca",
-          "Público e Valor",
-          "Mensagens-chave",
-        ],
-      },
-
-      expanded: {
-        label: "Expandido",
-
-        value: 22000,
+        value: 600,
 
         description:
-          "Versão aprofundada com maior documentação e transferência operacional.",
+          "Adaptação do sistema principal para novos formatos de embalagem, mantendo unidade estética, produtiva e operacional.",
 
         includes: [
-          "Tudo do Padrão",
-          "Arquitetura Estratégica",
-          "Identidade Verbal",
-          "Mapa de Evolução",
+          "Poke bowl — tamanho 01",
+          "Poke bowl — tamanho 02",
+          "Tampa personalizada para embalagem de escondidinho congelado",
+          "Adaptação da linguagem visual aos novos formatos",
+          "Arquivos finais para produção",
+          "Mockups de apresentação",
+          "Especificações básicas para fornecedores",
         ],
       },
     },
@@ -283,14 +303,16 @@ export const proposal = {
     websiteUrl: "https://simplexa.com.br",
 
     whatsapp: [
-    {
-      label: "PM FERRONY",
-      url: "https://wa.me/5555999999999",
-    },
+      {
+        label: "PM FERRONY",
+        url: "https://wa.me/5555999014361",
+      },
 
-    {
-      label: "ROGÉRIO LOBO",
-      url: "https://wa.me/5555981150877",
-    },
-  ],
-},
+      {
+        label: "ROGÉRIO LOBO",
+        url: "https://wa.me/5555981150877",
+      },
+    ],
+  },
+};
+```
