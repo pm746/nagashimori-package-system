@@ -38,7 +38,6 @@ cashDiscount: 0,
 entryPercent: 0,
 installmentsCount: 12,
 
-```
 options: [
   {
     id: "sebrae-12x",
