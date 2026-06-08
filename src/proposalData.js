@@ -181,7 +181,7 @@ timeline: {
 },
 
 exclusions: {
-    id: "delimitacoes",
+      id: "delimitacoes",
 
       eyebrow: "Delimitações",
 
